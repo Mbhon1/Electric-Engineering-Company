@@ -1,5 +1,6 @@
 import { Navbar, Dropdown, Button } from "flowbite-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function MyHeader() {
   return (
@@ -8,23 +9,23 @@ export default function MyHeader() {
         <Navbar.Brand>
           <Image
             src="https://flowbite.com/docs/images/logo.svg"
-            className="mr-3 h-6 sm:h-9"
-            alt="Flowbite Logo"
+            className="h-6 mr-3 sm:h-9"
+            alt="Company Logo"
             height={23}
             width={23}
           />
-          <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">
+          <span className="self-center text-xl font-semibold text-transparent whitespace-nowrap dark:text-white bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500">
             Company
           </span>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
-          <Navbar.Link href="/" active={true}>
+          <Link href="/" active={true}>
             Home
-          </Navbar.Link>
-          <Navbar.Link href="/team">Team</Navbar.Link>
-          <Navbar.Link href="/projects">Projects</Navbar.Link>
-          <Navbar.Link href="/contact">Contact</Navbar.Link>
+          </Link>
+          <Link href="/team">Team</Link>
+          <Link href="/projects">Projects</Link>
+          <Link href="/contact">Contact</Link>
         </Navbar.Collapse>
       </Navbar>
     </div>

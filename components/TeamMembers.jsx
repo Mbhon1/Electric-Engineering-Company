@@ -7,7 +7,7 @@ import member4 from "public/member4.png";
 
 export default function TeamMembers() {
   return (
-    <div className="max-w-xs mx-auto mt-7 px-14">
+    <div className="flex flex-col items-center max-w-xs gap-4 mx-auto mb-28 mt-7 px-14">
       <Card>
         <div className="flex flex-col items-center">
           <Image src={member1} alt="CEO" width={180} />
