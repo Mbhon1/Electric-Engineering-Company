@@ -20,9 +20,7 @@ export default function MyHeader() {
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
-          <Link href="/" active={true}>
-            Home
-          </Link>
+          <Link href="/">Home</Link>
           <Link href="/team">Team</Link>
           <Link href="/projects">Projects</Link>
           <Link href="/contact">Contact</Link>

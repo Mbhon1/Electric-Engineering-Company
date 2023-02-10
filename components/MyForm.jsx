@@ -26,44 +26,45 @@ export default function MyForm() {
 
   return (
     <Layout>
-      <div className="">
-        <Card>
-          <div className="text-slate-500">
-            <form
-              onSubmit={handleOnSubmit}
-              className="flex flex-col items-center gap-7"
-            >
-              <div className="">
-                <Input
-                  variant="outlined"
-                  required
-                  name="from_name"
-                  label="Full Name"
-                />
-              </div>
-              <div>
-                <Input
-                  variant="outlined"
-                  required
-                  name="from_email"
-                  label="Email"
-                />
-              </div>
-              <div>
-                <Textarea
-                  variant="outlined"
-                  name="message"
-                  color="blue"
-                  label="Message"
-                  required
-                />
-              </div>
-              <Button className="uppercase" variant="filled" type="submit">
-                Send
-              </Button>
-            </form>
-          </div>
-        </Card>
+      <div className="flex flex-col items-center uppercase mt-9">
+        <h1>Talk to me nicely 😎</h1>
+      </div>
+      <div className="mt-9">
+        <div className="text-slate-500">
+          <form
+            onSubmit={handleOnSubmit}
+            className="flex flex-col items-center gap-7"
+          >
+            <div className="">
+              <Input
+                variant="outlined"
+                required
+                name="from_name"
+                label="Full Name"
+              />
+            </div>
+            <div>
+              <Input
+                variant="outlined"
+                required
+                name="from_email"
+                label="Email"
+              />
+            </div>
+            <div>
+              <Textarea
+                variant="outlined"
+                name="message"
+                color="blue"
+                label="Message"
+                required
+              />
+            </div>
+            <Button className="uppercase" variant="filled" type="submit">
+              Send
+            </Button>
+          </form>
+        </div>
       </div>
     </Layout>
   );

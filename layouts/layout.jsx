@@ -20,11 +20,11 @@ export default function Layout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <body className={`${inter.className}`}>
+      <div className={`${inter.className}`}>
         <MyHeader />
         <main>{children}</main>
         <MyFooter />
-      </body>
+      </div>
     </div>
   );
 }

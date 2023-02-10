@@ -1,4 +1,5 @@
 import { Footer } from "flowbite-react";
+import Link from "next/link";
 
 export default function MyFooter() {
   return (
@@ -6,7 +7,7 @@ export default function MyFooter() {
       <Footer container={true}>
         <Footer.Copyright href="#" by="Company™" year={2023} />
         <Footer.LinkGroup className="justify-between">
-          <Footer.Link href="#">About</Footer.Link>
+          <Footer.Link href="/about">About</Footer.Link>
           <Footer.Link href="#">Privacy Policy</Footer.Link>
           <Footer.Link href="#">Licensing</Footer.Link>
           <Footer.Link href="/contact">Contact</Footer.Link>
