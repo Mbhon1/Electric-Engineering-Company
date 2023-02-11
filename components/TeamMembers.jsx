@@ -14,7 +14,7 @@ export default function TeamMembers(props) {
             src={props.imgSrc}
           />
           <h2>{props.name}</h2>
-          <span>{props.title}</span>
+          <span className="text-slate-500">{props.title}</span>
           <p>{props.email}</p>
         </div>
       </Card>
