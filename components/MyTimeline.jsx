@@ -25,6 +25,7 @@ export default function MyTimeline(props) {
         delay: 0.5,
         ease: [0, 0.71, 0.2, 1.01],
       }}
+      variants={list}
       className="mb-32 mx-7 mt-7"
     >
       <Timeline>

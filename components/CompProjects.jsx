@@ -10,8 +10,8 @@ export default function CompProjects() {
         key={project.id}
         alt={project.alt}
         src={project.imgLink}
-        width={200}
-        height={300}
+        width={890}
+        height={890}
       />
     );
   });

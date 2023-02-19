@@ -3,8 +3,8 @@ import engineering from "public/engineering.png";
 
 export default function Hero() {
   return (
-    <div>
-      <Image src={engineering} alt="Hero" cover priority />
+    <div className="h-screen bg-center bg-cover">
+      <Image src={engineering} alt="Hero" cover center priority />
     </div>
   );
 }

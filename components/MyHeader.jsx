@@ -14,15 +14,17 @@ export default function MyHeader() {
             height={23}
             width={23}
           />
-          <span className="self-center text-xl font-semibold text-transparent whitespace-nowrap dark:text-white bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500">
-            Company
+          <span className="self-center text-xl font-semibold text-transparent whitespace-nowrap dark:text-white bg-clip-text bg-gradient-to-r from-green-600 to-red-600">
+            Dreadlock Nation
           </span>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
-          <Link href="/">Home</Link>
+          <Link className="" href="/">
+            Home
+          </Link>
           <Link href="/team">Team</Link>
-          <Link href="/projects">Projects</Link>
+          <Link href="/services">Services</Link>
           <Link href="/contact">Contact</Link>
         </Navbar.Collapse>
       </Navbar>
